@@ -3,5 +3,10 @@
 }
 
 .App-logo {
-  max-width: 150px;
+  max-width: 100px;
+}
+
+.App footer {
+  font-size: 10px;
+  margin: 30px 0;
 }
