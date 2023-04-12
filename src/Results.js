@@ -16,7 +16,6 @@ export default function Results(props) {
               </div>
             );
           })}
-          <br />
         </section>
 
         {props.results.meanings.map(function (meaning, index) {
