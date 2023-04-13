@@ -2,20 +2,20 @@ import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import "./Dictionary.css";
+import Photos from "./Photos";
 
 export default function Dictionary(props) {
   const [keyword, setKeyword] = useState(props.defaultKeyword);
   const [results, setResults] = useState(null);
   const [loaded, setLoaded] = useState(false);
+  const [photos, setPhotos] = useState(null);
 
   function handleDictionaryResponse(response) {
-    console.log(response.data[0]);
-    console.log(response.data[0].meanings[0].definitions[0].definition);
     setResults(response.data[0]);
   }
 
   function handleImagesResponse(response) {
-    console.log(response);
+    setPhotos(response.data.photos);
   }
 
   function search() {
@@ -55,7 +55,9 @@ export default function Dictionary(props) {
             onChange={handleKeywordChange}
           />
         </form>
+
         <Results results={results} />
+        <Photos photos={photos} />
       </div>
     );
   } else {
