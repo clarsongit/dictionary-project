@@ -6,9 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header">
-          <img src={logo} className="img-fluid App-logo" alt="cl logo" />
-        </header>
+        <header className="App-header"></header>
         <main>
           <Dictionary defaultKeyword="dictionary" />
         </main>
