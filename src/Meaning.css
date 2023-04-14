@@ -3,13 +3,17 @@
   font-weight: 500;
 }
 
-.examples {
-  opacity: 80%;
-  font-weight: 400;
-  font-size: 15px;
+.Meaning h3 {
+  font-size: 25px;
 }
 
 .Meaning p {
   opacity: 0.8;
+  font-size: 16px;
+}
+
+.Meaning .examples {
+  opacity: 0.8;
+  font-weight: 400;
   font-size: 16px;
 }

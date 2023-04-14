@@ -8,3 +8,8 @@
   display: inline-block;
   padding-right: 10px;
 }
+
+.Synonyms span {
+  color: #9670f4;
+  font-weight: 600;
+}

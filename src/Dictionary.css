@@ -1,6 +1,10 @@
+.Dictionary {
+  font-family: "Playfair Display", serif;
+}
+
 .Dictionary h1 {
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
 }
 .Dictionary h4 {
