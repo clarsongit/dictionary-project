@@ -2,7 +2,7 @@ import React from "react";
 import "./Phonetics.css";
 
 export default function Phonetics(props) {
-  if (props.phonetics.audio) {
+  if (props.phonetics.audio && props.phonetics.text) {
     return (
       <div className="Phonetics">
         <a
